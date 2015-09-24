@@ -17,5 +17,7 @@
 - (NSString *) getColor;
 - (void) mature;
 - (void) fall;
+- (NSString *) getName;
+- (NSString *) getInformationString;
 
 @end

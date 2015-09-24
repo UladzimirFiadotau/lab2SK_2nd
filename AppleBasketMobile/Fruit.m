@@ -34,6 +34,12 @@
     //NSLog(@"Apple has fault");
 }
 
+- (NSString *) getName {
+    return @"fruit";
+}
 
+- (NSString *) getInformationString {
+    return @"fruit";
+}
 
 @end

@@ -19,7 +19,7 @@
 
 - (void) putFruit:(Fruit *)fruit {
     [_fruits addObject:fruit];
-    NSLog(@"%@ has been put.", [fruit className]);
+  //  NSLog(@"%@ has been put.", [fruit c]);
 }
 
 - (BasketIterator*) iterator {

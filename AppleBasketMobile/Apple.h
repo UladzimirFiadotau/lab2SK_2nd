@@ -16,5 +16,6 @@
 
 + (id) createApple;
 - (id) init;
-
+- (NSString *) getName;
+- (NSString *) getInformationString;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Apple.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _basket = [[Basket alloc] init];
+    for(int i=0; i<10; ++i){
+        [_basket putFruit:[Apple createApple]];
+    }
+    NSLog(@"Hello");
     return YES;
 }
 
