@@ -14,6 +14,13 @@
 		841F428E1BAD6DA600702955 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F428D1BAD6DA600702955 /* Images.xcassets */; };
 		841F42911BAD6DA600702955 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F428F1BAD6DA600702955 /* LaunchScreen.xib */; };
 		841F429D1BAD6DA700702955 /* AppleBasketMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F429C1BAD6DA700702955 /* AppleBasketMobileTests.m */; };
+		A9EBD9DF1BB41A68002D7DC7 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D01BB41A68002D7DC7 /* Apple.m */; };
+		A9EBD9E01BB41A68002D7DC7 /* AppleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D21BB41A68002D7DC7 /* AppleTree.m */; };
+		A9EBD9E11BB41A68002D7DC7 /* Basket.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D41BB41A68002D7DC7 /* Basket.m */; };
+		A9EBD9E21BB41A68002D7DC7 /* BasketIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D61BB41A68002D7DC7 /* BasketIterator.m */; };
+		A9EBD9E31BB41A68002D7DC7 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D81BB41A68002D7DC7 /* Fruit.m */; };
+		A9EBD9E41BB41A68002D7DC7 /* GeneralTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9DA1BB41A68002D7DC7 /* GeneralTree.m */; };
+		A9EBD9E51BB41A68002D7DC7 /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9DD1BB41A68002D7DC7 /* Leaf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,22 @@
 		841F42961BAD6DA600702955 /* AppleBasketMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleBasketMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841F429B1BAD6DA700702955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F429C1BAD6DA700702955 /* AppleBasketMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleBasketMobileTests.m; sourceTree = "<group>"; };
+		A9EBD9CF1BB41A68002D7DC7 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
+		A9EBD9D01BB41A68002D7DC7 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
+		A9EBD9D11BB41A68002D7DC7 /* AppleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleTree.h; sourceTree = "<group>"; };
+		A9EBD9D21BB41A68002D7DC7 /* AppleTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleTree.m; sourceTree = "<group>"; };
+		A9EBD9D31BB41A68002D7DC7 /* Basket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basket.h; sourceTree = "<group>"; };
+		A9EBD9D41BB41A68002D7DC7 /* Basket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Basket.m; sourceTree = "<group>"; };
+		A9EBD9D51BB41A68002D7DC7 /* BasketIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketIterator.h; sourceTree = "<group>"; };
+		A9EBD9D61BB41A68002D7DC7 /* BasketIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasketIterator.m; sourceTree = "<group>"; };
+		A9EBD9D71BB41A68002D7DC7 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		A9EBD9D81BB41A68002D7DC7 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		A9EBD9D91BB41A68002D7DC7 /* GeneralTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralTree.h; sourceTree = "<group>"; };
+		A9EBD9DA1BB41A68002D7DC7 /* GeneralTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralTree.m; sourceTree = "<group>"; };
+		A9EBD9DB1BB41A68002D7DC7 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		A9EBD9DC1BB41A68002D7DC7 /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		A9EBD9DD1BB41A68002D7DC7 /* Leaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
+		A9EBD9DE1BB41A68002D7DC7 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +104,22 @@
 		841F427F1BAD6DA600702955 /* AppleBasketMobile */ = {
 			isa = PBXGroup;
 			children = (
+				A9EBD9CF1BB41A68002D7DC7 /* Apple.h */,
+				A9EBD9D01BB41A68002D7DC7 /* Apple.m */,
+				A9EBD9D11BB41A68002D7DC7 /* AppleTree.h */,
+				A9EBD9D21BB41A68002D7DC7 /* AppleTree.m */,
+				A9EBD9D31BB41A68002D7DC7 /* Basket.h */,
+				A9EBD9D41BB41A68002D7DC7 /* Basket.m */,
+				A9EBD9D51BB41A68002D7DC7 /* BasketIterator.h */,
+				A9EBD9D61BB41A68002D7DC7 /* BasketIterator.m */,
+				A9EBD9D71BB41A68002D7DC7 /* Fruit.h */,
+				A9EBD9D81BB41A68002D7DC7 /* Fruit.m */,
+				A9EBD9D91BB41A68002D7DC7 /* GeneralTree.h */,
+				A9EBD9DA1BB41A68002D7DC7 /* GeneralTree.m */,
+				A9EBD9DB1BB41A68002D7DC7 /* Helper.h */,
+				A9EBD9DC1BB41A68002D7DC7 /* Leaf.h */,
+				A9EBD9DD1BB41A68002D7DC7 /* Leaf.m */,
+				A9EBD9DE1BB41A68002D7DC7 /* Tree.h */,
 				841F42841BAD6DA600702955 /* AppDelegate.h */,
 				841F42851BAD6DA600702955 /* AppDelegate.m */,
 				841F42871BAD6DA600702955 /* ViewController.h */,
@@ -219,9 +258,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EBD9E41BB41A68002D7DC7 /* GeneralTree.m in Sources */,
+				A9EBD9DF1BB41A68002D7DC7 /* Apple.m in Sources */,
 				841F42891BAD6DA600702955 /* ViewController.m in Sources */,
+				A9EBD9E21BB41A68002D7DC7 /* BasketIterator.m in Sources */,
 				841F42861BAD6DA600702955 /* AppDelegate.m in Sources */,
+				A9EBD9E51BB41A68002D7DC7 /* Leaf.m in Sources */,
+				A9EBD9E31BB41A68002D7DC7 /* Fruit.m in Sources */,
+				A9EBD9E01BB41A68002D7DC7 /* AppleTree.m in Sources */,
 				841F42831BAD6DA600702955 /* main.m in Sources */,
+				A9EBD9E11BB41A68002D7DC7 /* Basket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +462,7 @@
 				841F42A21BAD6DA700702955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		841F42A31BAD6DA700702955 /* Build configuration list for PBXNativeTarget "AppleBasketMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +471,7 @@
 				841F42A51BAD6DA700702955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
