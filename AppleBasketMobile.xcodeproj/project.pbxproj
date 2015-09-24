@@ -21,6 +21,8 @@
 		A9EBD9E31BB41A68002D7DC7 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D81BB41A68002D7DC7 /* Fruit.m */; };
 		A9EBD9E41BB41A68002D7DC7 /* GeneralTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9DA1BB41A68002D7DC7 /* GeneralTree.m */; };
 		A9EBD9E51BB41A68002D7DC7 /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9DD1BB41A68002D7DC7 /* Leaf.m */; };
+		D038549C1BB4424C00D2B085 /* FruitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D038549B1BB4424C00D2B085 /* FruitViewController.m */; };
+		D038549E1BB4482B00D2B085 /* FruitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D038549D1BB4482B00D2B085 /* FruitStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		A9EBD9DC1BB41A68002D7DC7 /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
 		A9EBD9DD1BB41A68002D7DC7 /* Leaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
 		A9EBD9DE1BB41A68002D7DC7 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		D038549A1BB4424C00D2B085 /* FruitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitViewController.h; sourceTree = "<group>"; };
+		D038549B1BB4424C00D2B085 /* FruitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitViewController.m; sourceTree = "<group>"; };
+		D038549D1BB4482B00D2B085 /* FruitStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FruitStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,9 @@
 				841F428D1BAD6DA600702955 /* Images.xcassets */,
 				841F428F1BAD6DA600702955 /* LaunchScreen.xib */,
 				841F42801BAD6DA600702955 /* Supporting Files */,
+				D038549A1BB4424C00D2B085 /* FruitViewController.h */,
+				D038549B1BB4424C00D2B085 /* FruitViewController.m */,
+				D038549D1BB4482B00D2B085 /* FruitStoryboard.storyboard */,
 			);
 			path = AppleBasketMobile;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D038549E1BB4482B00D2B085 /* FruitStoryboard.storyboard in Resources */,
 				841F428C1BAD6DA600702955 /* Main.storyboard in Resources */,
 				841F42911BAD6DA600702955 /* LaunchScreen.xib in Resources */,
 				841F428E1BAD6DA600702955 /* Images.xcassets in Resources */,
@@ -266,6 +275,7 @@
 				A9EBD9E51BB41A68002D7DC7 /* Leaf.m in Sources */,
 				A9EBD9E31BB41A68002D7DC7 /* Fruit.m in Sources */,
 				A9EBD9E01BB41A68002D7DC7 /* AppleTree.m in Sources */,
+				D038549C1BB4424C00D2B085 /* FruitViewController.m in Sources */,
 				841F42831BAD6DA600702955 /* main.m in Sources */,
 				A9EBD9E11BB41A68002D7DC7 /* Basket.m in Sources */,
 			);
@@ -394,8 +404,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleBasketMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -404,8 +416,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleBasketMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

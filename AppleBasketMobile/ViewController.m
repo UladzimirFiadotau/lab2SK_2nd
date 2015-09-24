@@ -10,17 +10,20 @@
 #import "AppDelegate.h"
 #import "BasketIterator.h"
 #import "Basket.h"
+#import "FruitViewController.h"
 
 @interface ViewController ()
 
 @property Basket *basket;
-@property (weak, nonatomic) IBOutlet UITableView *basketTable;
+@property (strong, nonatomic) IBOutlet UITableView *basketTable;
+@property Fruit* selectedFruit;
 
 @end
 
 @implementation ViewController
 {
     NSMutableArray *fruits;
+    
 }
 
 - (void)viewDidLoad {
@@ -32,7 +35,6 @@
     BasketIterator *iterator = [_basket iterator];
     fruits = [[NSMutableArray alloc] init];
     while([iterator hasNext]){
-        
         [fruits addObject:[iterator next]];
     }
     NSLog(@"<- did load");
@@ -65,8 +67,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //NSLog(@"%@", [[fruits objectAtIndex:indexPath.row] getName]);
-    [self displayAlertMessage:[fruits objectAtIndex:indexPath.row] ];
+    //FruitViewController* fruitVC = [[FruitViewController alloc] init];
+    _selectedFruit = [fruits objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"FruitSegue" sender:self];
+    //[self displayAlertMessage:[fruits objectAtIndex:indexPath.row]];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"FruitSegue"])
+    {
+        // Get reference to the destination view controller
+        FruitViewController *vc = [segue destinationViewController];
+        ViewController* sendervc = (ViewController*)sender;
+        [vc setFruit:[sendervc selectedFruit]];
+        
+        // Pass any objects to the view controller here, like...
+        //[vc setMyObjectHere:object];
+    }
+}
+
 
 - (void) displayAlertMessage: (Fruit*) fruit {
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:[fruit getName] message:[fruit getInformationString] preferredStyle:UIAlertControllerStyleAlert];
@@ -75,5 +94,7 @@
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+
 
 @end
