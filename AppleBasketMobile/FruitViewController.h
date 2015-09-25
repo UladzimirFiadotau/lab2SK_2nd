@@ -11,6 +11,7 @@
 @interface FruitViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *infoFruitNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *infoFruitDataLabel;
 - (void)setFruit:(Fruit*)fruit;
 
 @end
