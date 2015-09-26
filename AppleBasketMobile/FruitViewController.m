@@ -48,6 +48,7 @@
     NSLog(@"1 %@", [_infoFruitNameLabel text]);
     NSLog(@"%@", [_fruit getName]);
     [_infoFruitNameLabel setText:[_fruit getName]];
+    [_infoFruitDataLabel setText:[_fruit getInformationString]];
     NSLog(@"2 %@", [_infoFruitNameLabel text]);
 }
 @end

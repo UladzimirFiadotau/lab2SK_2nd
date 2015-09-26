@@ -14,6 +14,7 @@
 		841F428E1BAD6DA600702955 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F428D1BAD6DA600702955 /* Images.xcassets */; };
 		841F42911BAD6DA600702955 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841F428F1BAD6DA600702955 /* LaunchScreen.xib */; };
 		841F429D1BAD6DA700702955 /* AppleBasketMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F429C1BAD6DA700702955 /* AppleBasketMobileTests.m */; };
+		84B1C5491BB5D0D4008B29F3 /* Banana.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B1C5481BB5D0D4008B29F3 /* Banana.m */; };
 		A9EBD9DF1BB41A68002D7DC7 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D01BB41A68002D7DC7 /* Apple.m */; };
 		A9EBD9E01BB41A68002D7DC7 /* AppleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D21BB41A68002D7DC7 /* AppleTree.m */; };
 		A9EBD9E11BB41A68002D7DC7 /* Basket.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EBD9D41BB41A68002D7DC7 /* Basket.m */; };
@@ -49,6 +50,8 @@
 		841F42961BAD6DA600702955 /* AppleBasketMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleBasketMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841F429B1BAD6DA700702955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F429C1BAD6DA700702955 /* AppleBasketMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleBasketMobileTests.m; sourceTree = "<group>"; };
+		84B1C5471BB5D0D4008B29F3 /* Banana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Banana.h; sourceTree = "<group>"; };
+		84B1C5481BB5D0D4008B29F3 /* Banana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banana.m; sourceTree = "<group>"; };
 		A9EBD9CF1BB41A68002D7DC7 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
 		A9EBD9D01BB41A68002D7DC7 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
 		A9EBD9D11BB41A68002D7DC7 /* AppleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleTree.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				A9EBD9CF1BB41A68002D7DC7 /* Apple.h */,
+				84B1C5471BB5D0D4008B29F3 /* Banana.h */,
+				84B1C5481BB5D0D4008B29F3 /* Banana.m */,
 				A9EBD9D01BB41A68002D7DC7 /* Apple.m */,
 				A9EBD9D11BB41A68002D7DC7 /* AppleTree.h */,
 				A9EBD9D21BB41A68002D7DC7 /* AppleTree.m */,
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B1C5491BB5D0D4008B29F3 /* Banana.m in Sources */,
 				A9EBD9E41BB41A68002D7DC7 /* GeneralTree.m in Sources */,
 				A9EBD9DF1BB41A68002D7DC7 /* Apple.m in Sources */,
 				841F42891BAD6DA600702955 /* ViewController.m in Sources */,

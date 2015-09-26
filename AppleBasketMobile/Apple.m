@@ -10,11 +10,19 @@
 
 @implementation Apple
 
+{
+    int number;
+}
+
+static int appleCount = 0;
+
 - (id) init {
     self = [super init];
     self.isOnTree = YES;
     self.color = arc4random_uniform(3);
-    _boneCount = arc4random_uniform(1000);
+    _boneCount = arc4random_uniform(10);
+    appleCount++;
+    number = appleCount;
     return self;
 }
 
@@ -31,14 +39,17 @@
 }
 
 - (NSString *) getName{
-    return @"Apple";
+    NSMutableString *result = [[NSMutableString alloc] init];
+    [result appendString:@"Apple #"];
+    [result appendFormat:@"%d", number];
+    return result;
 }
 
 - (NSString *) getInformationString{
     NSMutableString *result = [[NSMutableString alloc] init];
     [result appendString:@"Color: "];
     [result appendString:[self getColor]];
-    [result appendString:@"\nCount of bones: "];
+    [result appendString:@". Count of bones: "];
     [result appendFormat:@"%d",_boneCount];
     return result;
 }

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "Apple.h"
+#import "Banana.h"
+#include "stdlib.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,13 @@
     // Override point for customization after application launch.
     _basket = [[Basket alloc] init];
     for(int i=0; i<10; ++i){
-        [_basket putFruit:[Apple createApple]];
+        unsigned int random = arc4random_uniform(2);
+        if (random == 0) {
+            [_basket putFruit:[Apple createApple]];
+        } else if (random == 1) {
+            [_basket putFruit:[Banana createBanana]];
+        }
+        
     }
     NSLog(@"Hello");
     return YES;
